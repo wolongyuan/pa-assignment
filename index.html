@@ -43,7 +43,8 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                    <span class="sr-only">Toggle navigation</span> Menu
+                    <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">PA Assignment</a>
             </div>
@@ -89,14 +90,15 @@
                     <h2 class="section-heading">Description</h2>
                     <hr class="light">
                     <p class="text-faded">
-                        The functionality of this application is as follows:<br>
+                        The functionality of this application is as follows:
                         <br>
-                        1. Read the uploaded Excel file (only support .xls and .xlsx format) and extract its data. <br>
-                        2. Display the data using a scrollable and editable table and plot it using a scatter plot.<br>
-                        3. Allow users to edit the table, including change cell's value, add or delete a row, exchange two adjacent rows.<br>
-                        4. Update the graph (with adaptive axises) when the data in the table changes.<br>
-                        5. Allow users to change the data in the table by sliding the slider or updating the select.<br>
-                        6. Create and download the spreadsheet containing the edited data.
+                        <br> 1. Read the uploaded Excel file (only support .xls and .xlsx format) and extract its data.
+                        <br> 2. Display the data using a scrollable and editable table and plot it using a scatter plot.
+                        <br> 3. Allow users to edit the table, including change cell's value, add or delete a row, exchange two
+                        adjacent rows.
+                        <br> 4. Update the graph (with adaptive axises) when the data in the table changes.
+                        <br> 5. Allow users to change the data in the table by sliding the slider or updating the select.
+                        <br> 6. Create and download the spreadsheet containing the edited data.
                     </p>
                     <a href="#try" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a>
                 </div>
@@ -128,7 +130,9 @@
             <div class="canvas row">
                 <div class="col-md-5 col-md-offset-1" id="focus-detect">
                     <!--<div class="col-md-6">-->
-                    <span id="declare"><small>*This is default content. Please upload your own Excel file.</small></span>
+                    <span id="declare">
+                        <small>*This is default content. Please upload your own Excel file.</small>
+                    </span>
                     <span class="table-add glyphicon glyphicon-plus"></span>
                     <br>
                     <table class="table table-striped table-bordered table-responsive" id="editable">
@@ -285,31 +289,42 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">About Wolong Yuan</h2>
                     <hr class="primary">
-                    <p>I’m an incoming graduate student in the Department of Computer Sciences starting from Aug. 2017. In this June, I will receive my bachelor's degree from Computer Science and Technology College of Zhejiang University, a top university in China.
+                    <p>I’m an incoming graduate student in the Department of Computer Sciences starting from Aug. 2017. In this
+                        June, I will receive my bachelor's degree from Computer Science and Technology College of Zhejiang
+                        University, a top university in China.
                     </p>
                     <p>Feel free to ping me!</p>
                 </div>
             </div>
-            <br><br>
+            <br>
+            <br>
             <div class="row">
                 <div class="col-md-2 col-md-offset-2 text-center">
                     <i class="fa fa-file-pdf-o fa-3x sr-contact"></i>
-                    <p><a href="https://resume.wyuan.xyz/">Resume</a></p>
+                    <p>
+                        <a href="https://download.wyuan.xyz/Resume_Wolong_Yuan.pdf">Resume</a>
+                    </p>
                 </div>
                 <div class="col-md-2 text-center">
                     <i class="fa fa-phone fa-3x sr-contact"></i>
-                    <p>086-15868192858</p>
+                    <p id="phone"></p>
                 </div>
                 <div class="col-md-2 text-center">
                     <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p><a href="mailto:yuanwolong@gmail.com">yuanwolong@gmail.com</a></p>
+                    <p id="email">
+                        <a href="mailto:yuanwolong@gmail.com">yuanwolong@gmail.com</a>
+                    </p>
                 </div>
                 <div class="col-md-2 text-center">
                     <i class="fa fa-linkedin fa-3x sr-contact"></i>
-                    <p><a href="https://www.linkedin.com/in/wolong-yuan-185a56123/">Wolong Yuan</a></p>
+                    <p>
+                        <a href="https://www.linkedin.com/in/wolong-yuan-185a56123/">Wolong Yuan</a>
+                    </p>
                 </div>
             </div>
-            <br><br><br>
+            <br>
+            <br>
+            <br>
             <div class="row">
                 <footer>
                     <small>&copy; Copyright 2017. All Rights Reserved.</small>
@@ -338,7 +353,21 @@
     <script src="js/assignment.js"></script>
 
     <script>
-        
+        var user = 'yuanwolong',
+            domain = 'gmail.com',
+            email = document.getElementById('email'),
+            aEmail = document.createElement('a'),
+            number = '6084403319',
+            phone = document.getElementById('phone'),
+            aPhone = document.createElement('a');
+
+        aEmail.setAttribute('href', 'mailto:' + user + '@' + domain);
+        aEmail.innerHTML = user + '@' + domain;
+        email.appendChild(aEmail);
+
+        aPhone.setAttribute('href', 'tel:' + number);
+        aPhone.innerHTML = '+1 (608) 440-3319';
+        phone.appendChild(aPhone);
     </script>
 </body>
 
