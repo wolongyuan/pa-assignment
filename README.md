@@ -14,6 +14,6 @@ which composer
 Use composer to install PhpSpreadsheet into your project.
 
 ```bash
-composer require phpoffice/phpspreadsheet
+composer require phpoffice/phpspreadsheet:dev-develop
 ```
 
