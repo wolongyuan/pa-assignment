@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPOffice/PhpSpreadsheet.git",
-                "reference": "77199c9877cb9b3992a5f835592a737720f8403a"
+                "reference": "79ab852bf5a1c9a0c33960cf8c69a4b73476d6cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/77199c9877cb9b3992a5f835592a737720f8403a",
-                "reference": "77199c9877cb9b3992a5f835592a737720f8403a",
+                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/79ab852bf5a1c9a0c33960cf8c69a4b73476d6cb",
+                "reference": "79ab852bf5a1c9a0c33960cf8c69a4b73476d6cb",
                 "shasum": ""
             },
             "require": {
@@ -31,8 +31,8 @@
             },
             "require-dev": {
                 "dompdf/dompdf": "^0.8.0",
-                "friendsofphp/php-cs-fixer": "^2.0",
-                "mpdf/mpdf": "^6.1",
+                "friendsofphp/php-cs-fixer": "^2.7",
+                "mpdf/mpdf": "7.0.0-RC1@dev",
                 "phpunit/phpunit": "^5.7",
                 "squizlabs/php_codesniffer": "^2.7",
                 "tecnickcom/tcpdf": "^6.2"
@@ -84,7 +84,7 @@
                 "xls",
                 "xlsx"
             ],
-            "time": "2017-05-07 15:07:27"
+            "time": "2017-10-14T05:57:44+00:00"
         },
         {
             "name": "psr/simple-cache",
